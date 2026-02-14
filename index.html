@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kyle - A Frontend Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header aria-label="Header">
+    <div id="logo">
+      <span>Kyle</span>
+    </div>
+    <nav class="nav-bar" aria-label="Navigation Bar">
+      <a href="#" class="nav-link">Home</a>
+      <a href="./about.html" class="nav-link">About</a>
+      <a href="./contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="settings">
+      <input type="checkbox" id="settings-checkbox" aria-hidden="true">
+      <label class="settings-icon" for="settings-checkbox">
+      </label>
+      <div class="settings-menu">
+        <label for="dark-mode-checkbox" id="dark-mode-label" class="dark-mode">
+          <span>Dark Mode</span>
+          <input type="checkbox" id="dark-mode-checkbox" aria-hidden="true">
+          <div class="toggle"></div>
+        </label>
+        <label for="animations-checkbox" class="animations">
+          <span>Animations</span>
+          <input checked type="checkbox" id="animations-checkbox" aria-hidden="true">
+          <div class="toggle"></div>
+        </label>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="hero">
+      <div id="hero-content">
+
+        <h1>
+          <div>Meet <span id="person-name">Kyle</span>,</div>
+          <div>A <span id="role-name">
+              <span id="text-animate"></span>
+              <span id="text-cursor"></span>
+            </span> Developer</div>
+        </h1>
+        <p>
+          Turn your Ideas into Web Applications
+        </p>
+        <div id="hero-btns">
+          <a href="#projects"><button class="view-projects-btn">View Projects</button></a>
+          <a href="./contact.html"><button class="get-in-touch-btn">Get In Touch</button></a>
+        </div>
+      </div>
+      <div id="profile-image-container">
+        <div class="profile-image"></div>
+      </div>
+    </section>
+    <section id="technologies-i-use">
+      <h2>Technologies I use</h2>
+      <div id="technologies-images">
+        <div class="img html"></div>
+        <div class="img css"></div>
+        <div class="img js"></div>
+        <div class="img git"></div>
+        <div class="img github"></div>
+        <div class="img figma"></div>
+      </div>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div id="cards-container">
+        <div class="card">
+          <img src="./images/factorial-generator.png" alt="A Clock Timer" />
+          <h3>Factorial Generator</h3>
+          <div class="technologies-used">
+            <p>Built With:</p>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+          </div>
+          <p>
+            This is factorial generator in this if you enter a number it will give the factorial of that number.
+          </p>
+          <button class="view-btn">View</button>
+        </div>
+        <div class="card">
+          <img src="./images/binary-decimal-converter.png" alt="A Clock Timer" />
+          <h3>Decimal Binary Converter</h3>
+          <div class="technologies-used">
+            <p>Built With:</p>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+          </div>
+          <p>
+            In this converter you can convert a decimal number to binary and a binary number to decimal.
+          </p>
+          <button class="view-btn">View</button>
+        </div>
+        <div class="card">
+          <img src="./images/to-do-list-project.png" alt="A Clock Timer" />
+          <h3>To Do List App</h3>
+          <div class="technologies-used">
+            <p>Built With:</p>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+          </div>
+          <p>
+            This is a To Do List app where you can add, remove, and check tasks.
+          </p>
+          <button class="view-btn">View</button>
+        </div>
+        <div class="card">
+          <img src="./images/style-editor-project.png" alt="A Clock Timer" />
+          <h3>Style Editor</h3>
+          <div class="technologies-used">
+            <p>Built With:</p>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+          </div>
+          <p>
+            This is a Style Editor. In this style Editor you can write right click on any element and give it a class after that you can style that class and when you will hit the style button the styles will be applied to those elements.
+          </p>
+          <button class="view-btn">View</button>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="social-media-links"><!--
+          --><a target="_blank" href="https://www.youtube.com"><div class="youtube"></div></a><!--
+          --><a target="_blank" href="https://www.facebook.com"><div class="facebook"></div></a><!--
+          --><a target="_blank" href="https://www.instagram.com"><div class="instagram"></div></a><!--
+          --><a target="_blank" href="https://www.linkedin.com"><div class="linkedin"></div></a><!--
+          --><a target="_blank" href="https://www.x.com"><div class="x"></div></a><!--
+          --></div>
+      <div class="nav-bar">
+        <a href="#" class="nav-link">Privacy policy</a>
+        <a href="#" class="nav-link">Terms & Conditions</a>
+      </div>
+    </footer>
+  </main>
+  <script src="./js/text-animate.js"></script>
+  <script src="./js/dark-mode.js"></script>
+</body>
+
+</html>

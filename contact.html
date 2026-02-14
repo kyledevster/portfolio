@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Kyle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header aria-label="Header">
+    <div id="logo">
+      <span>Kyle</span>
+    </div>
+    <nav class="nav-bar" aria-label="Navigation Bar">
+      <a href="./index.html" class="nav-link">Home</a>
+      <a href="./about.html" class="nav-link">About</a>
+      <a href="#" class="nav-link">Contact</a>
+    </nav>
+    <div class="settings">
+      <input type="checkbox" id="settings-checkbox" aria-hidden="true">
+      <label class="settings-icon" for="settings-checkbox" >
+      </label>
+      <div class="settings-menu">
+        <label for="dark-mode-checkbox" class="dark-mode">
+          <span>Dark Mode</span>
+          <input type="checkbox" id="dark-mode-checkbox" aria-hidden="true">
+          <div class="toggle"></div>
+        </label>
+        <label for="animations-checkbox" class="animations">
+          <span>Animations</span>
+          <input checked type="checkbox" id="animations-checkbox" aria-hidden="true">
+          <div class="toggle"></div>
+        </label>
+      </div>
+    </div>
+  </header>
+  <main class="horizontal-layout">
+    <section id="contact-details">
+      <h2>Contact Us</h2>
+      <address>
+        <div class="email">
+          <h3>Email</h3>
+          <a href="mailto:example@email.com">example@email.com</a>
+        </div>
+        <div class="phone-number">
+          <h3>Phone Number</h3>
+          <a href="tel:555-555-555-5">555-555-555-5</a>
+        </div>
+        <div class="social-media-links">
+          <h3>Social Media</h3><!--
+          --><a href="https://www.youtube.com"><div class="youtube"></div></a><!--
+          --><a href="https://www.facebook.com"><div class="facebook"></div></a><!--
+          --><a href="https://www.instagram.com"><div class="instagram"></div></a><!--
+          --><a href="https://www.linkedin.com"><div class="linkedin"></div></a><!--
+          --><a href="https://www.x.com"><div class="x"></div></a><!--
+          --></div>
+      </address>
+    </section>
+    <section id="message-section">
+      <div class="name" name="name">
+        <div>
+          <label for="first-name">Your First Name</label>
+          <input size="15" type="text" id="first-name" name="first-name" aria-label="First Name" placeholder="eg. Carl">
+        </div>
+        <div>
+          <label for="last-name">Your Last Name</label>
+          <input size="15" type="text" id="last-name" name="last-name" aria-label="Last Name" placeholder="eg. Johnson">
+        </div>
+      </div>
+      <div>
+        <label for="email">Your Email</label>
+        <input type="email" name="email" id="email" placeholder="example@email.com">
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea name="message" id="message" placeholder="Enter a message."></textarea>
+      </div>
+      <div>
+        <button id="send-message">Send</button>
+      </div>
+    </section>
+  </main>
+  <div id="footer-space"></div>
+  <footer id="footer">
+    <div class="nav-bar">
+      <a href="#" class="nav-link">Privacy Policy</a>
+      <a href="#" class="nav-link">Terms & Conditions</a>
+    </div>
+  </footer>
+  <script src="js/dark-mode.js"></script>
+</body>
+</html>
